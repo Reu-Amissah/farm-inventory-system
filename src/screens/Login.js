@@ -1,3 +1,4 @@
+import "../App.css";
 import React from "react";
 import bg_img from "../assets/bg_img.jpg";
 
