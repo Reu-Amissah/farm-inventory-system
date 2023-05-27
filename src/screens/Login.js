@@ -7,7 +7,7 @@ export default function Login() {
     <div className="w-full h-screen flex items-center justify-center bg-blue-950">
       <div className="w-full h-full bg-white md:rounded-md flex items-center justify-center md:space-x-4 md:w-11/12 md:mx-auto md:h-5/6">
         {/* left section ---- */}
-        <div className="w-full px-5 md:w-full md:mx-auto lg:px-40 space-y-4">
+        <div className="w-full px-5 md:w-1/2 md:mx-auto md:px-10 lg:px-24 space-y-4">
           <h3 className="text-3xl font-semibold font-sans">Welcome back</h3>
           <p className="text-sm font-normal font-sans text-slate-400">
             Welcome! Please enter your login details
@@ -57,7 +57,7 @@ export default function Login() {
 
         {/* right section ------ */}
         <div
-          className="md:flex lg:w-1/2 h-full items-center justify-center hidden"
+          className="md:flex md:w-1/2 h-full items-center justify-center hidden"
           id="image"
         >
           <div className="description w-full bg-white mx-5 mb-5 bg-opacity-60 backdrop-blur-md bg-filter rounded-lg p-4 shadow-md border border-white">
