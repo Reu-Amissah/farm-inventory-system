@@ -5,7 +5,6 @@ import bg_img from "../assets/bg_img.jpg";
 export default function Login() {
   return (
     <div className="w-full h-screen flex items-center justify-center bg-blue-950">
-      {/* <div className="content w-11/12 mx-auto bg-white rounded-md"> */}
       <div className="w-11/12 mx-auto h-5/6 bg-white rounded-md flex items-center justify-center space-x-4">
         <div className="w-1/2 px-40 space-y-4">
           <h3 className="text-3xl font-semibold font-sans">Welcome back</h3>
@@ -54,15 +53,22 @@ export default function Login() {
             </p>
           </p>
         </div>
-        <div className="w-1/2 h-full">
-          <img
-            className="rounded-md object-cover h-full hidden sm:block"
-            src={bg_img}
-            alt="bg_img"
-          ></img>
+        <div
+          className="w-1/2 h-full flex items-center justify-center"
+          id="image"
+        >
+          <div className="description w-full self-end bg-white mx-5 mb-5 bg-opacity-60 backdrop-blur-md bg-filter rounded-lg p-4 shadow-md border border-white">
+            <p className="text-2xl text-lime-700 font-semibold font-sans">
+              Say goodbye to farm stock management hustle and stress with
+              FarmAssitant
+            </p>
+            <p className="text-sm text-slate-500 font-semibold font-sans">
+              Take complete control of your business effectively and
+              efficiently. #HustleFree
+            </p>
+          </div>
         </div>
       </div>
-      {/* </div> */}
     </div>
   );
 }
