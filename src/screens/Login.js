@@ -5,9 +5,9 @@ import bg_img from "../assets/Barn.jpg";
 export default function Login() {
   return (
     <div className="w-full h-screen flex items-center justify-center bg-blue-950">
-      <div className="w-full h-full bg-white md:rounded-md flex items-center justify-center md:space-x-4 md:w-11/12 md:mx-auto md:h-5/6">
+      <div className="w-full h-full bg-white md:rounded-md flex items-center justify-center md:space-x-4 md:w-11/12 xl:w-10/12 md:mx-auto md:h-5/6">
         {/* left section ---- */}
-        <div className="w-full px-5 md:w-1/2 md:mx-auto md:px-10 lg:px-24 space-y-4">
+        <div className="w-full px-5 md:w-1/2 md:mx-auto md:px-10 lg:px-24 xl:px-32 space-y-4">
           <h3 className="text-3xl font-semibold font-sans">Welcome back</h3>
           <p className="text-sm font-normal font-sans text-slate-400">
             Welcome! Please enter your login details
