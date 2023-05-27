@@ -1,13 +1,13 @@
 import "../App.css";
 import React from "react";
-import bg_img from "../assets/bg_img.jpg";
+import bg_img from "../assets/Barn.jpg";
 
 export default function Login() {
   return (
     <div className="w-full h-screen flex items-center justify-center bg-blue-950">
-      {/* <div className="content w-11/12 mx-auto bg-white rounded-md"> */}
-      <div className="w-11/12 mx-auto h-5/6 bg-white rounded-md flex items-center justify-center space-x-4">
-        <div className="w-1/2 px-40 space-y-4">
+      <div className="w-full h-full bg-white md:rounded-md flex items-center justify-center md:space-x-4 md:w-11/12 md:mx-auto md:h-5/6">
+        {/* left section ---- */}
+        <div className="w-full px-5 md:w-1/2 md:mx-auto md:px-10 lg:px-24 space-y-4">
           <h3 className="text-3xl font-semibold font-sans">Welcome back</h3>
           <p className="text-sm font-normal font-sans text-slate-400">
             Welcome! Please enter your login details
@@ -46,7 +46,6 @@ export default function Login() {
           <button className="transition ease-in-out duration-150 focus:outline-none text-lime-700 bg-white hover:bg-slate-100 hover:text-lime-700 font-medium rounded-md text-sm w-full py-2.5 mr-2 mb-2 border border-lime-200">
             Sign in with Google
           </button>
-
           <p className="flex align-center justify-center text-xs font-normal font-sans text-slate-400">
             Don't have an account?
             <p className="transition ease-in-out duration-150 font-semibold text-slate-900 cursor-pointer hover:text-slate-700 hover:underline hover:underline-offset-4 pl-1">
@@ -54,15 +53,32 @@ export default function Login() {
             </p>
           </p>
         </div>
-        <div className="w-1/2 h-full">
-          <img
-            className="rounded-md object-cover h-full hidden sm:block"
-            src={bg_img}
-            alt="bg_img"
-          ></img>
+        {/* left section end ---- */}
+
+        {/* right section ------ */}
+        <div
+          className="md:flex md:w-1/2 h-full items-center justify-center hidden"
+          id="image"
+        >
+          <div className="description w-full bg-white mx-5 mb-5 bg-opacity-60 backdrop-blur-md bg-filter rounded-lg p-4 shadow-md border border-white">
+            <img
+              src={bg_img}
+              alt="farm-illustration"
+              className="w-1/3 rounded-md border border-white mx-auto"
+            ></img>
+            <p className="text-2xl text-lime-700 text-center font-semibold font-sans mt-4">
+              Say goodbye to farm stock management hustle and stress with
+              FarmAssitant
+            </p>
+            <p className="text-sm text-slate-500 text-center font-semibold font-sans">
+              Take complete control of your business effectively and
+              efficiently. #HustleFree
+            </p>
+            <span className="block h-20 w-0.5 bg-lime-200 ml-2 rounded-sm"></span>
+          </div>
         </div>
+        {/* right section end ---- */}
       </div>
-      {/* </div> */}
     </div>
   );
 }
