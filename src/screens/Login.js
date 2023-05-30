@@ -10,7 +10,7 @@ export default function Login() {
         <div className="w-full px-5 md:w-1/2 md:mx-auto md:px-10 lg:px-24 xl:px-32 space-y-4">
           <h3 className="text-3xl font-semibold font-sans">Welcome back</h3>
           <p className="text-sm font-normal font-sans text-slate-400">
-            Welcome! Please enter your login details
+            Welcome! Please enter your login details - weka
           </p>
           <div className="space-y-1">
             <p className="text-xs font-semibold font-sans">Email</p>
@@ -60,21 +60,21 @@ export default function Login() {
           className="md:flex md:w-1/2 h-full items-center justify-center hidden"
           id="image"
         >
-          <div className="description w-full bg-white mx-5 mb-5 bg-opacity-60 backdrop-blur-md bg-filter rounded-lg p-4 shadow-md border border-white">
+          <div className="description w-full bg-blue-950 mx-5 mb-5 bg-opacity-60 backdrop-blur-md bg-filter rounded-lg p-4 shadow-md border border-white">
             <img
               src={bg_img}
               alt="farm-illustration"
               className="w-1/3 rounded-md border border-white mx-auto"
             ></img>
-            <p className="text-2xl text-lime-700 text-center font-semibold font-sans mt-4">
+            <p className="text-2xl text-lime-200 text-center font-semibold font-sans mt-4">
               Say goodbye to farm stock management hustle and stress with
               FarmAssitant
             </p>
-            <p className="text-sm text-slate-500 text-center font-semibold font-sans">
+            <p className="text-sm text-white text-center font-semibold font-sans">
               Take complete control of your business effectively and
               efficiently. #HustleFree
             </p>
-            <span className="block h-20 w-0.5 bg-lime-200 ml-2 rounded-sm"></span>
+            <span className="block h-20 w-0.5 bg-white ml-2 rounded-sm"></span>
           </div>
         </div>
         {/* right section end ---- */}
